@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">kt_motivation</string>
+    <string name="all_inclusive_description">"Infinite symbol "</string>
+    <string name="happy_face_description">Happy Face Emoji</string>
+    <string name="sunny_description">Sun icon</string>
 </resources>
