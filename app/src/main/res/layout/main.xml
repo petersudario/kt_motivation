@@ -22,8 +22,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:contentDescription="@string/all_inclusive_description"
-            android:src="@drawable/ic_all_inclusive_foreground"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_all_inclusive_foreground" />
 
         <ImageView
             android:id="@+id/ic_happy_face"
