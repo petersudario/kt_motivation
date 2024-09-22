@@ -5,6 +5,7 @@ import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
 import com.example.kt_motivation.R
+import com.example.kt_motivation.data.Mock
 import com.example.kt_motivation.infra.SecurityPreferences
 import com.example.kt_motivation.databinding.MainBinding
 import com.example.kt_motivation.infra.MotivationConstants
@@ -25,6 +26,13 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         if (name != "") {
             binding.helloUser.text = "Hello, $name!"
         }
+    }
+
+    /**
+     * Handles the next phrase to be shown
+     */
+    private fun handleNextPhrase() {
+        binding.textPhrase.text = Mock().getPhrase(categoryId)
     }
 
     /**
@@ -76,6 +84,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
 
         handleUserName()
         handleFilter(R.id.ic_all_inclusive)
+        handleNextPhrase()
 
         binding.buttonNewPhrase.setOnClickListener(this)
 
@@ -87,7 +96,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
 
     override fun onClick(view: View) {
         if (view.id == R.id.button_new_phrase) {
-            var s = ""
+            handleNextPhrase()
         } else if (view.id in listOf(R.id.ic_all_inclusive, R.id.ic_happy_face, R.id.ic_sunny)) {
             handleFilter(view.id)
         }
