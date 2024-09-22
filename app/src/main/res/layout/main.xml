@@ -2,6 +2,7 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,36 +14,37 @@
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        >
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:tint="@color/white"
-            android:id="@+id/ic_all_inclusive"
-            android:contentDescription="@string/all_inclusive_description"
-            android:src="@drawable/ic_all_inclusive_foreground"/>
+        android:paddingBottom="16dp">
 
         <ImageView
+            android:id="@+id/ic_all_inclusive"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:contentDescription="@string/all_inclusive_description"
+            android:src="@drawable/ic_all_inclusive_foreground"
+            app:tint="@color/white" />
+
+        <ImageView
             android:id="@+id/ic_happy_face"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
             android:contentDescription="@string/happy_face_description"
             android:src="@drawable/ic_happy_face_foreground"/>
 
         <ImageView
+            android:id="@+id/ic_sunny"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:id="@+id/ic_sunny"
             android:contentDescription="@string/sunny_description"
             android:src="@drawable/ic_sunny_foreground"/>
 
     </LinearLayout>
     
     <TextView
+        android:id="@+id/hello_user"
         android:text="@string/hello_kotlin"
         android:fontFamily="@font/cabin"
         android:textStyle="bold"

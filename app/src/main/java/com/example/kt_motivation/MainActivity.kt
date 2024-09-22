@@ -1,4 +1,5 @@
 package com.example.kt_motivation
+
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
@@ -11,6 +12,8 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = MainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.helloUser.text = "Hello, ${SecurityPreferences(this).getStoredString("USER_NAME")}!"
 
         binding.buttonNewPhrase.setOnClickListener(this)
     }

@@ -29,7 +29,15 @@ class UserActivity : ComponentActivity(), View.OnClickListener {
     private fun handleSave() {
         val name = binding.editName.text.toString()
         if (name != "") {
-            startActivity(Intent(this, MainActivity::class.java))  // Responsible for page redirecting
+
+            SecurityPreferences(this).storeString("USER_NAME", name)
+
+            startActivity(
+                Intent(
+                    this,
+                    MainActivity::class.java
+                )
+            )  // Responsible for page redirecting
             finish() // Destroys the current activity
         } else {
             print("did not work")
