@@ -10,8 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kt_motivation"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Kt_motivation">
         <activity
             android:name=".UserActivity"
             android:exported="true">
@@ -24,8 +23,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Kt_motivation">
-        </activity>
+            android:theme="@style/Theme.Kt_motivation" />
 
         <meta-data
             android:name="preloaded_fonts"
