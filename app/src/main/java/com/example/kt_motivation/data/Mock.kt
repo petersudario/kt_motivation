@@ -17,13 +17,13 @@ class Mock {
     private val all = MotivationConstants.PHRASEFILTER.ALL
 
     private val mListPhrase = listOf<Phrase>(
-        Phrase("Imagine a new story for your life and believe in it.", happy),
-        Phrase("The only way to do great work is to love what you do.", happy),
+        Phrase("Imagine a new story for your life and believe in it.", sunny),
+        Phrase("The only way to do great work is to love what you do.", sunny),
         Phrase("The best time to plant a tree was 20 years ago. The second best time is now.", happy),
-        Phrase("Your limitation—it’s only your imagination.", happy),
-        Phrase("Push yourself, because no one else is going to do it for you.", happy),
-        Phrase("Great things never come from comfort zones.", happy),
-        Phrase("Dream it. Wish it. Do it.", happy),
+        Phrase("Your limitation—it’s only your imagination.", sunny),
+        Phrase("Push yourself, because no one else is going to do it for you.", sunny),
+        Phrase("Great things never come from comfort zones.", sunny),
+        Phrase("Dream it. Wish it. Do it.", sunny),
         Phrase("Success doesn’t just find you. You have to go out and get it.", happy),
         Phrase("The harder you work for something, the greater you’ll feel when you achieve it.", happy),
         Phrase("Dream bigger. Do bigger.", happy),
@@ -37,14 +37,14 @@ class Mock {
         Phrase("The key to success is to focus on goals, not obstacles.", happy),
         Phrase("Dream it. Believe it. Build it.", happy),
         Phrase("You don’t have to be great to start, but you have to start to be great.", happy),
-        Phrase("The secret of getting ahead is getting started.", happy),
-        Phrase("You are never too old to set another goal or to dream a new dream.", happy),
-        Phrase("Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.", happy),
-        Phrase("It’s not about how bad you want it. It’s about how hard you’re willing to work for it.", happy),
-        Phrase("The only limit is your mind.", happy),
-        Phrase("The harder you work for something, the greater you’ll feel when you achieve it.", happy),
-        Phrase("Don’t stop when you’re tired. Stop when you’re done.", happy),
-        Phrase("Wake up with determination. Go to", happy)
+        Phrase("The secret of getting ahead is getting started.", all),
+        Phrase("You are never too old to set another goal or to dream a new dream.", all),
+        Phrase("Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.", all),
+        Phrase("It’s not about how bad you want it. It’s about how hard you’re willing to work for it.", all),
+        Phrase("The only limit is your mind.", all),
+        Phrase("The harder you work for something, the greater you’ll feel when you achieve it.", all),
+        Phrase("Don’t stop when you’re tired. Stop when you’re done.", all),
+        Phrase("Wake up with determination. Go to", all)
     )
 
     /**
