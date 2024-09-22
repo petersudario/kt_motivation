@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/user_layout"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@color/purple">
@@ -20,7 +21,7 @@
 
 
     <EditText
-        android:id="@+id/your_name"
+        android:id="@+id/edit_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -28,6 +29,7 @@
         android:fontFamily="@font/cabin"
         android:hint="@string/what_is_your_name"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:textSize="22sp"
         tools:ignore="Autofill,TextFields" />
     
