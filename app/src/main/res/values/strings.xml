@@ -5,4 +5,7 @@
     <string name="sunny_description">Sun icon</string>
     <string name="hello_kotlin">Olá, Kotlin!</string>
     <string name="new_phrase">Nova Frase</string>
+    <string name="lets_begin">Vamos começar!</string>
+    <string name="what_is_your_name">Qual é seu nome?</string>
+    <string name="button_save_text">Salvar</string>
 </resources>

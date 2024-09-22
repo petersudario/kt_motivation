@@ -1,20 +1,24 @@
 package com.example.kt_motivation
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.view.View
+import androidx.activity.ComponentActivity
+import com.example.kt_motivation.databinding.UserBinding
 
-class UserActivity : AppCompatActivity() {
+class UserActivity :  ComponentActivity(), View.OnClickListener {
+    private lateinit var binding: UserBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_user)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        binding = UserBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+    }
+
+    override fun onClick(v: View) {
+        if (v.id == R.id.button_save) {
+            var s = ""
         }
     }
 }
