@@ -3,4 +3,6 @@
     <string name="all_inclusive_description">"Infinite symbol "</string>
     <string name="happy_face_description">Happy Face Emoji</string>
     <string name="sunny_description">Sun icon</string>
+    <string name="hello_kotlin">Olá, Kotlin!</string>
+    <string name="new_phrase">Nova Frase</string>
 </resources>

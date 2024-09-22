@@ -3,25 +3,29 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    >
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linear_menu"
+        android:background="@color/purple"
         android:layout_width="match_parent"
-        android:padding="8dp"
-        android:id="@+id/top_bar"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:tint="@color/white"
             android:id="@+id/ic_all_inclusive"
             android:contentDescription="@string/all_inclusive_description"
             android:src="@drawable/ic_all_inclusive_foreground"/>
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:id="@+id/ic_happy_face"
@@ -29,7 +33,7 @@
             android:src="@drawable/ic_happy_face_foreground"/>
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:id="@+id/ic_sunny"
@@ -37,9 +41,23 @@
             android:src="@drawable/ic_sunny_foreground"/>
 
     </LinearLayout>
+    
+    <TextView
+        android:text="@string/hello_kotlin"
+        android:fontFamily="@font/cabin"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear_menu"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
     <TextView
         android:id="@+id/text_phrase"
+        android:text="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -47,27 +65,28 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="16dp"
-        android:text="Hello World" />
+        android:layout_marginTop="16dp" />
 
     <View
-        android:layout_width="128dp"
+        android:layout_width="240dp"
         android:layout_height="5dp"
+        android:elevation="6dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/black"
+        android:background="@color/dark_purple"
         android:layout_below="@+id/text_phrase">
-
     </View>
 
     <Button
         android:id="@+id/button_new_phrase"
+        android:text="@string/new_phrase"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cabin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:text="Nova Frase"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/dark_purple" />
 
 
 </RelativeLayout>
